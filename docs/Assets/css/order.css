@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(180deg,rgba(0,0,0,0.3)0%, rgba(0,0,0,0.8)100%),url(../Pictures/jovan-vasiljevic-458Mq2CKg7g-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Hero{
+    border: none;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(0,0,0,0.3)0%, rgba(0,0,0,0.8)100%),url(../Pictures/pexels-sides-imagery-3077334.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    background: none;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+label.logo img{
+    width: 10rem;
+    height: 10rem;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+a.selected,a:hover{
+    background: rgb(239, 1, 1);
+    padding-top: 20%;
+    transition: .5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+label.logo{
+    font: 5rem;
+    padding-left: 5%;
+}
+nav ul li a{
+    margin-top: -50%;
+    font-size: .8rem;
+}
+
+
+svg{
+    width: 1rem;
+    height: 1rem;
+    fill: #fff;
+}
+svg:hover{
+    fill: rgb(239, 1, 1);
+}
+
+
+iframe{
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 20px;
+  
+}
+
+
+@media (min-width:320px) and (max-width:1023px) {
+    
+
+    body{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        
+        font-weight: bold;
+    }
+    
+    label.logo img{
+        width: 10rem;
+        height: 10rem;
+        
+    }
+    label.icon img{
+       
+        padding-bottom: 5%;
+        width: 3rem;
+        height: 3rem;
+        fill: aliceblue;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+       
+        background-image: url(../Pictures/caramel_macciato_+_shortbread.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a {
+        font-size: 100%;
+        fill: red;
+    }
+    a:hover,a.selected{
+        background: none;
+        color:burlywood;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    iframe{
+        margin-left: 10%;
+        margin-top: 20%;
+        border-radius: 20px;
+    }
+}
